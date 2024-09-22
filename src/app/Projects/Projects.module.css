@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+.projects {
+  height: 450px;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  transform: translateX(-120px);
+  opacity: 0;
+}
+
+.title {
+  text-align: center;
+  color: var(--tertiary-color);
+  font-size: 5em;
+  width: 100%;
+}
+
+.collum {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+}
+
+.collum div {
+  align-self: center;
+  transition: 0.4s;
+  height: 280px;
+  width: 400px;
+  background-color: #234870;
+}
+
+.collum div:hover,
+.collum div:focus {
+  background-color: #8CB0D9;
+  transform: scale(1.2);
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (max-width: 880px) {
+  .collum div {
+    height: 230px;
+    width: 350px;
+    margin: 19px 15px 19px 15px;
+  }
+
+  .collum {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .projects {
+    height: 600px;
+  }
+
+  .collum div:focus {
+    transform: scale(1.15);
+  }
+}

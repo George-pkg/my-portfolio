@@ -1,0 +1,41 @@
+.header{
+  display: flex;
+  justify-content:center;
+}
+
+.navegation {
+  border-bottom: var(--border-bottom);
+  background: rgba(10,10,25,0.7);
+  backdrop-filter: blur(24px);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  padding-inline: .8rem;
+
+  position: fixed;
+  z-index: 100;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+
+  font-size: 1.8rem;
+  height: 6rem;
+}
+
+.link {
+  color: var(--gray);
+  padding: 2rem;
+}
+
+.link:hover {
+  color: var(--white);
+}
+
+@media (max-width: 400px) {
+  .link {
+    padding: 1.2rem;
+  }
+  
+}
